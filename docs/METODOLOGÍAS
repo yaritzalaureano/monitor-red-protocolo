@@ -1,0 +1,113 @@
+# Documentación Scrum - Proyecto Monitoreo de Red
+
+## Roles
+- Scrum Master: [Tu nombre]
+- Product Owner: [Nombre del profesor o encargado]
+- Equipo de Desarrollo: [Nombre1, Nombre2...]
+
+## Product Backlog
+Lista de tareas y funcionalidades del proyecto:
+
+1. Captura de Información del Sistema
+   - Sistema operativo, Hostname, MAC, Fabricante, IP, Fecha/Hora de uso de puertos
+   - Regla: no registrar puertos usados en últimos 10 min
+2. Validación de Direcciones
+   - Comprobar que MAC y IP no estén duplicadas en la red
+3. Modelo de Base de Datos (MySQL)
+   - Tablas: Equipo, Fabricante, Protocolo, Protocolo Usado
+4. Aplicación Cliente
+   - Desarrollo en Visual Basic/C# para capturar la info
+5. Servicio en Windows
+   - Ejecutarse automáticamente al inicio
+6. Integración con Área de Notificación
+   - Icono en System Tray, sin permitir cierre por usuario
+7. Interfaz Web
+   - Mostrar datos de los clientes de forma responsiva
+8. Clasificación de Protocolos
+   - Colores según seguridad (Verde, Amarillo, Naranja, Rojo)
+9. Reportes y Gráficas
+   - Generar gráficos de pastel de protocolos seguros e inseguros
+   - Mostrar actividad general de protocolos en la red
+
+## Sprints
+
+### Sprint 1
+- Desarrollo de scripts de captura de información
+- Validación de direcciones
+- Entregable: script funcional de captura y validación
+
+### Sprint 2
+- Modelo de Base de Datos y aplicación cliente
+- Servicio en Windows
+- Entregable: base de datos y cliente funcional
+
+### Sprint 3
+- Integración con área de notificación y interfaz web
+- Clasificación de protocolos
+- Entregable: cliente integrado y web funcional
+
+### Sprint 4
+- Módulo de reportes y gráficas
+- Revisión y pruebas finales
+- Entregable: sistema completo con visualización de datos
+
+## Revisiones y Retrospectivas
+- Qué salió bien: scripts funcionales, cliente operativo, interfaz web clara
+- Qué mejorar: optimización de consultas en base de datos, estabilidad del servicio en Windows
+
+## Tablero de Tareas
+- Capturas de GitHub Projects o Trello (opcional)
+
+
+
+
+
+# Documentación Modelo Espiral - Proyecto Monitoreo de Red
+
+## Fases del Proyecto
+
+### Fase 1: Planeación
+- Definir objetivos: capturar información de equipos en la red, validar datos y mostrar visualmente la información.
+- Identificar requerimientos: cliente, servicio, base de datos, interfaz web, reportes.
+
+### Fase 2: Análisis de Riesgos
+- Riesgo: Duplicación de MAC/IP → Mitigación: validación de direcciones
+- Riesgo: Servicio que se cierre por error → Mitigación: bloqueo de cierre desde System Tray
+- Riesgo: Datos incorrectos en reportes → Mitigación: pruebas y validación de scripts
+
+### Fase 3: Desarrollo / Prototipo
+- Implementación de scripts de captura
+- Desarrollo de cliente en Visual Basic/C#
+- Configuración de servicio de Windows
+- Diseño de base de datos MySQL
+
+### Fase 4: Evaluación / Feedback
+- Pruebas de captura en varios equipos
+- Validación de integridad de datos
+- Ajustes en clasificación de protocolos y visualización web
+
+## Iteraciones
+
+### Ciclo 1
+- Captura de información + validación de direcciones
+- Prototipo inicial del cliente
+- Evaluación: scripts funcionando correctamente
+
+### Ciclo 2
+- Base de datos y servicio de Windows
+- Evaluación: integración cliente ↔ base de datos
+
+### Ciclo 3
+- Interfaz web y clasificación de protocolos
+- Evaluación: visualización correcta, colores de protocolos consistentes
+
+### Ciclo 4
+- Reportes y gráficas
+- Evaluación: generación de gráficos de pastel de protocolos, datos completos de la red
+
+## Riesgos y Mitigaciones
+- Duplicación de datos → validación de MAC/IP
+- Servicio cerrado por usuario → bloqueo desde System Tray
+- Datos inconsistentes → pruebas unitarias y de integración
+- Problemas de visualización web → pruebas en distintos navegadores
+
