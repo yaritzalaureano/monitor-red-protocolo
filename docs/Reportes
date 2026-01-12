@@ -1,1 +1,65 @@
+📊 Reportes y Visualización de Datos
+📌 Descripción general
 
+Este documento describe el módulo de reportes y gráficas del sistema de monitoreo de red.
+Su objetivo es presentar de forma visual y comprensible la información recopilada por los equipos clientes sobre el uso de protocolos y puertos de red.
+
+Los reportes permiten identificar protocolos seguros, inseguros e innecesarios dentro de la red.
+
+📈 Tipos de reportes generados
+🥧 Reporte de protocolos seguros
+
+Muestra en una gráfica de pastel los protocolos clasificados como seguros.
+
+Permite identificar rápidamente el porcentaje de tráfico confiable en la red.
+
+Representado con el color verde.
+
+🥧 Reporte de protocolos inseguros
+
+Muestra en una gráfica de pastel los protocolos clasificados como inseguros.
+
+Facilita la detección de riesgos potenciales de seguridad.
+
+Representado con el color rojo.
+
+📊 Actividad general de protocolos
+
+Muestra la actividad total de protocolos utilizados por todos los equipos en la red.
+
+Permite analizar tendencias de uso y detectar servicios innecesarios.
+
+Representado mediante gráficas comparativas.
+
+🎨 Clasificación de protocolos por nivel de seguridad
+
+Los protocolos se clasifican de acuerdo con su nivel de seguridad:
+
+Color	Nivel	Descripción
+🟢 Verde	Seguro	Protocolos confiables (ej. puerto 22, 445)
+🟡 Amarillo	Precaución	Protocolos que requieren monitoreo
+🟠 Naranja	Intermedio	Protocolos de uso limitado
+🔴 Rojo	Inseguro	Protocolos obsoletos o riesgosos (ej. puerto 19)
+🧠 Criterios de clasificación
+
+La clasificación se realiza con base en:
+
+Buenas prácticas de seguridad en redes.
+
+Uso recomendado de puertos y protocolos.
+
+Nivel de exposición al riesgo.
+
+Necesidad real del servicio dentro de la red.
+
+🧩 Relación con otros módulos
+
+El módulo de reportes se alimenta de la información proveniente de:
+
+Los scripts de captura de información
+
+La base de datos central
+
+La interfaz web
+
+Este módulo es fundamental para la toma de decisiones de seguridad.
